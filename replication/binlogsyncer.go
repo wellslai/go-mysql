@@ -637,8 +637,8 @@ func (b *BinlogSyncer) retrySync() error {
 			return errors.Trace(err)
 		}
 	} else {
-		b.cfg.Logger.Infof("begin to re-sync from %s", b.nextPos)
-		if err := b.prepareSyncPos(b.nextPos); err != nil {
+		b.cfg.Logger.Infof("begin to re-sync from %s", 4)
+		if err := b.prepareSyncPos(4); err != nil {
 			return errors.Trace(err)
 		}
 	}
